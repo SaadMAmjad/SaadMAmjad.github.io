@@ -1,6 +1,7 @@
 import './App.css';
 import Home from './components/Home';
 import Navbar from './components/NavBar';
+import Footer from './components/Footer';
 
 // colour pallete
 // 001011 black, primary
@@ -13,8 +14,8 @@ function App() {
   return (
     <div>
       <Navbar/>
-      {/* import the home component */}
       <Home/>
+      <Footer/>
     </div>
   );
 }

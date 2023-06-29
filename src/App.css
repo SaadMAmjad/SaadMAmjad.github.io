@@ -4,6 +4,7 @@
   background-blend-mode: lighten;
   background-color: #668add80;
   /* extra padding because every other way was too complicated lol */
+  padding-top: 4rem;
   /* todo remove this when there's enough content */
   height: 110vh;
 }
@@ -11,6 +12,10 @@
 
 .transparentAndColour {
   background-color: #2E2F30CC;
+}
+
+.secondaryText {
+  color: #5FA3E8;
 }
 
 /* .App {

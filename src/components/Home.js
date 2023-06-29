@@ -3,7 +3,7 @@ import selfie from '../images/selfie.jpg'
 function Home() {
     return (
         //title/landing section
-        <div className='homePage pt-2'>
+        <div className='homePage'>
             {/* container for the picture and opening title */}
             <div className='container p-4 transparentAndColour'>
                 <div className='row'>
@@ -39,13 +39,13 @@ function Home() {
                         <img src={selfie} alt="A selfie of me" className='img-fluid' />
                     </div>
                     {/* and this will take the other 8 */}
-                    <div className='col-sm-8 align-self-center'>
+                    <div className='col-sm-8 align-self-center text-center text-white'>
                         {/* how to import pictures, see the top also */}
-                        <h3 className='text-center text-white'>Hello! I'm</h3>
-                        <h1 className='text-center text-white'>Muhammad Saad Amjad</h1>
-                        <h3 className='text-center text-white'>Graduate of Mobile Applications Development</h3>
-                        <h3 className='text-center text-white'>Hobbyist writer and artist</h3>
-                        <h4 className='text-center text-white'>Check out my work and skills below</h4>
+                        <h3 className='secondaryText'>Hello! I'm</h3>
+                        <h1>Muhammad Saad Amjad</h1>
+                        <h3 className='pt-4 secondaryText'>Graduate of Mobile Applications Development</h3>
+                        <h3 className='secondaryText'>Hobbyist writer and artist</h3>
+                        <h4 style={{marginTop: '4rem', color: 'gray'}}>Check out my work and skills below</h4>
                     </div>
                 </div>
             </div>
