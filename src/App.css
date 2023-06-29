@@ -1,4 +1,19 @@
-.App {
+.homePage {
+  background-image: url("./images/First\ last\ moments\ of\ Itomori\ \(Night\ sky\ only\).png");
+  background-size: cover;
+  background-blend-mode: lighten;
+  background-color: #668add80;
+  /* extra padding because every other way was too complicated lol */
+  /* todo remove this when there's enough content */
+  height: 110vh;
+}
+/* might need to just make the background image and actual image tag on the page, then reduce opacity */
+
+.transparentAndColour {
+  background-color: #2E2F30CC;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +50,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

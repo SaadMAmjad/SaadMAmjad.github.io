@@ -3,9 +3,9 @@ import selfie from '../images/selfie.jpg'
 function Home() {
     return (
         //title/landing section
-        <div>
+        <div className='homePage pt-2'>
             {/* container for the picture and opening title */}
-            <div className='container-fluid bg-light pt-2 mt-2'>
+            <div className='container p-4 transparentAndColour'>
                 <div className='row'>
                     {/* Container class by default will take only some of the screen on big devices. add -fluid to it for fullscreen
                     -------------------------------------------------------------------------
@@ -41,13 +41,16 @@ function Home() {
                     {/* and this will take the other 8 */}
                     <div className='col-sm-8 align-self-center'>
                         {/* how to import pictures, see the top also */}
-                        <h1>Hello, I'm Muhammad Saad Amjad</h1>
-                        <h2>Programmer by school. Hobbyist writter and artist on spare time.</h2>
+                        <h3 className='text-center text-white'>Hello! I'm</h3>
+                        <h1 className='text-center text-white'>Muhammad Saad Amjad</h1>
+                        <h3 className='text-center text-white'>Graduate of Mobile Applications Development</h3>
+                        <h3 className='text-center text-white'>Hobbyist writer and artist</h3>
+                        <h4 className='text-center text-white'>Check out my work and skills below</h4>
                     </div>
                 </div>
             </div>
             {/* Skills section */}
-            <div className='container mt-5 justify-content-between'>
+            {/* <div className='container mt-5 justify-content-between'>
                 <div className='row'>
                     <div className='col-sm-6'>
                         <h3>Skills</h3>
@@ -56,7 +59,7 @@ function Home() {
                         <h3>Skills</h3>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
