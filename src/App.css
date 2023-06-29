@@ -5,8 +5,9 @@
   background-color: #668add80;
   /* extra padding because every other way was too complicated lol */
   padding-top: 4rem;
+  padding-bottom: 1rem;
   /* todo remove this when there's enough content */
-  height: 110vh;
+  /* height: 110vh; */
 }
 /* might need to just make the background image and actual image tag on the page, then reduce opacity */
 

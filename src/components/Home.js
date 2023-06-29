@@ -49,6 +49,17 @@ function Home() {
                     </div>
                 </div>
             </div>
+
+            <div className='container transparentAndColour mt-5' style={{paddingBottom: '30rem'}}>
+                <div className='row'>
+                    <div className='col-sm-6 p-4'>
+                        <h1 className='text-light'>Placeholder for testing</h1>
+                    </div>
+                    <div className='col-sm-6 p-4'>
+                        <h1 className='text-light'>Placeholder for testing</h1>
+                    </div>
+                </div>
+            </div>
             {/* Skills section */}
             {/* <div className='container mt-5 justify-content-between'>
                 <div className='row'>

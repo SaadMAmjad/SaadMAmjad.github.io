@@ -1,6 +1,6 @@
 import linkedin from '../images/Linkedin logo.png'
 import GitHub from '../images/Git logo.png'
-import Email from '../images/Email.png'
+// import Email from '../images/Email.png'
 
 function Footer() {
     return (
@@ -11,7 +11,7 @@ function Footer() {
                     {/* row */}
                     <div className="row">
                         {/* column */}
-                        <div className="col-3 mb-4 mb-md-0">
+                        <div className="col-xs-4 col-sm-3 mb-4 mb-md-0">
                             <h5 className="text-uppercase text-light">Connect with me</h5>
 
                             <ul className="list-unstyled mb-0">
@@ -39,7 +39,7 @@ function Footer() {
                         </div>
 
                         {/* column */}
-                        <div className="col-6 pt-3">
+                        <div className="col-xs-8 col-sm-6 pt-3">
                             <h6 className="text-uppercase text-light text-center">Drawings and Stories are my own works</h6>
                             <h6 className="text-light text-center">Copyright © 2023</h6>
                         </div>
