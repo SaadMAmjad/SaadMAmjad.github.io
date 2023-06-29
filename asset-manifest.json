@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.cedc5f77.css",
-    "main.js": "/static/js/main.3bf4c170.js",
+    "main.css": "/static/css/main.a4a325aa.css",
+    "main.js": "/static/js/main.3935a051.js",
     "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
     "static/media/selfie.jpg": "/static/media/selfie.5840d01876ba35a731ba.jpg",
     "static/media/First last moments of Itomori (Night sky only).png": "/static/media/First last moments of Itomori (Night sky only).b68ef61f25ec70a694b0.png",
-    "static/media/Email.png": "/static/media/Email.da04f7c981638876dfa9.png",
     "static/media/Linkedin logo.png": "/static/media/Linkedin logo.38dec86db3dd63436a06.png",
     "static/media/Git logo.png": "/static/media/Git logo.987334e9f782cc505f25.png",
     "index.html": "/index.html",
-    "main.cedc5f77.css.map": "/static/css/main.cedc5f77.css.map",
-    "main.3bf4c170.js.map": "/static/js/main.3bf4c170.js.map",
+    "main.a4a325aa.css.map": "/static/css/main.a4a325aa.css.map",
+    "main.3935a051.js.map": "/static/js/main.3935a051.js.map",
     "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cedc5f77.css",
-    "static/js/main.3bf4c170.js"
+    "static/css/main.a4a325aa.css",
+    "static/js/main.3935a051.js"
   ]
 }
