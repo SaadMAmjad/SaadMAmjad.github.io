@@ -50,15 +50,100 @@ function Home() {
                 </div>
             </div>
 
-            <div className='container transparentAndColour mt-5' style={{paddingBottom: '30rem'}}>
-                <div className='row'>
-                    <div className='col-sm-6 p-4'>
-                        <h1 className='text-light'>Placeholder for testing</h1>
-                    </div>
-                    <div className='col-sm-6 p-4'>
-                        <h1 className='text-light'>Placeholder for testing</h1>
-                    </div>
-                </div>
+            {/* padding temporary to make it fill the page */}
+            <div className='container transparentAndColour pb-2' style={{marginTop: '10rem'}}>
+            <h1 className='text-light text-center p-3'>Programming</h1>
+            <h3 className='p-2 secondaryText'>Languages and Markup</h3>
+            {/* Programming language table */}
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Technology</th>
+                        <th scope="col">Experience Level</th>
+                        <th scope="col" style={{width: '25%'}}>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr className='align-middle'>
+                        <th scope="row">HTML and CSS</th>
+                        <td>Proficient</td>
+                        <td>Experienced with Bootstrap too</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">PHP</th>
+                        <td>Proficient</td>
+                        <td></td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">SQL</th>
+                        <td>Some Experience</td>
+                        <td>I have used it quite a lot within Laravel's query builder</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Java</th>
+                        <td>Proficient</td>
+                        <td>Only base Java, I have not tried any frameworks so far</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Javascript</th>
+                        <td>Some Experience</td>
+                        <td></td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Swift</th>
+                        <td>Some Experience</td>
+                        <td>I don't personally have a mac, so a bit rusty</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">C#</th>
+                        <td>Some Experience</td>
+                        <td></td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Ruby</th>
+                        <td>Only Dabbled</td>
+                        <td>Used it for one class in college</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 className='p-2 secondaryText'>Frameworks and Platforms</h3>
+            {/* framework table */}
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Technology</th>
+                        <th scope="col">Experience Level</th>
+                        <th scope="col" style={{width: '25%'}}>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr className='align-middle'>
+                        <th scope="row">React.js</th>
+                        <td>Some Experience</td>
+                        <td>Used to build this site</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Android (Java)</th>
+                        <td>Proficient</td>
+                        <td>A bit rusty</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">iOS and XCode</th>
+                        <td>Some Experience</td>
+                        <td>No personal Mac so it's been some time since I worked with it</td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Laravel (PHP)</th>
+                        <td>Proficient</td>
+                        <td></td>
+                    </tr>
+                    <tr className='align-middle'>
+                        <th scope="row">Ruby on Rails</th>
+                        <td>Only Dabbled</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
             </div>
             {/* Skills section */}
             {/* <div className='container mt-5 justify-content-between'>

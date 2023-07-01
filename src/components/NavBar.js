@@ -1,5 +1,6 @@
 function Navbar() {
     return (
+        // TODO, navbar don't work with the context menu on mobile. figure out why
         <div>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark px-3 fixed-top">
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
