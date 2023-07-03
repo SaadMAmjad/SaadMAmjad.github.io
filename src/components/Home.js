@@ -1,4 +1,5 @@
 import selfie from '../images/selfie.jpg'
+import demo from '../images/Zekelman Part Time Demo Video.mp4'
 
 function Home() {
     return (
@@ -158,20 +159,67 @@ function Home() {
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingOne">
                             <button className="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
+                                <strong>Zekelman Part-Time</strong>
                             </button>
                         </h2>
                         {/* accordian body, what will actually be shown when clicked. need to figure out how to put vids in here sometime */}
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                {/* TODO style this maybe */}
+                                <p>A website built for St Clair College to help manage part time instructors and their timetables.</p>
+                                <p>It features a user side and an admin side.</p>
+                                <p>The user side is for instructors to use and includes sections for each day to enter your 
+                                    available hours. It also includes a section to select courses you can teach. All this data will be
+                                    saved to the application's database. The sections include:</p>
+                                <ul>
+                                    <li>A welcome page which briefly explains the website and its functionality</li>
+                                    <li>The sections for each day of the week (except Sunday) where your available hours 
+                                        can be submitted</li>
+                                    <li>And lastly, a page where you make requests to teach a certain course. Programs are displayed 
+                                        first and clicking on each will display associated courses</li>
+                                </ul>
+                                <p>The Admin's panel is where information is pulled and displayed. It is divided up between a few 
+                                    sections to make information more digestible and easier to scan at a glance. The sections 
+                                    include:</p>
+                                <ul>
+                                    <li>A list of all instructors with edit and deactivate buttons (if they no longer work at the college) 
+                                        as well as sub pages for deactivated instructors (to view or reativate) or unresponsive instructors</li>
+                                    <li>A timetable of all submitted hours (or indication that none have been submitted). This page 
+                                        supports exporting in excel format</li>
+                                    <li>A page where all programs and courses are displayed, created, edited or deleted</li>
+                                    <li>A list of previous courses taught by each instructor</li>
+                                    <li>The current semester, and the ability/create to start a new one</li>
+                                    <li>A mass preformated email page, used to request that instructors submit their hours at the 
+                                        start of each semester (note that this only includes active instructors)</li>
+                                    <li>And finally a page where instructor requests to teach courses are displayed. They are 
+                                        granted or denied here by the admin(s)</li>
+                                </ul>
+                                <p>Primary Technologies used:</p>
+                                <ul>
+                                    <li>Laravel with PHP</li>
+                                    <li>MySQL</li>
+                                    <li>Bootstrap</li>
+                                    <li>And a library used to export to excel format</li>
+                                </ul>
+                                <p>Built in collaboration with</p>
+                                <ul>
+                                    <li><a className="text-light" href='https://github.com/ryanmurphy01' target='_blank'>Ryan Murphy</a></li>
+                                    <li><a className="text-light" href='https://github.com/PhilipRosen01' target='_blank'>Philip Rosen</a></li>
+                                </ul>
+                                <p>Project GitHub link <a className="text-light" 
+                                href='https://github.com/ryanmurphy01/Capstone-Project' target='_blank'>Here</a></p>
+                                {/* TODO, these should probably be seperate components, the page is huge now */}
+                                <p>See the demo video below:</p>
+                                <video width={320} height={240} controls>
+                                    <source src={demo} type='video/mp4'></source>
+                                </video>
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
+                                Glass.io
                             </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -183,7 +231,8 @@ function Home() {
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
+                                TV Tracker
+                                {/* might replace with the iOS app I did */}
                             </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
