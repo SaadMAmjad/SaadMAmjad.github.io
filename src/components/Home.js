@@ -1,5 +1,11 @@
 import selfie from '../images/selfie.jpg'
 import demo from '../images/Zekelman Part Time Demo Video.mp4'
+import glass1 from '../images/Glassio demo img 1.png'
+import glass2 from '../images/Glassio demo img 2.png'
+import glass3 from '../images/Glassio demo img 3.png'
+import glass4 from '../images/Glassio demo img 4.png'
+import glass5 from '../images/Glassio demo img 5.png'
+import glass6 from '../images/Glassio demo img 6.png'
 
 function Home() {
     return (
@@ -159,7 +165,7 @@ function Home() {
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingOne">
                             <button className="accordion-button bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <strong>Zekelman Part-Time</strong>
+                                <strong className='secondaryText'>Zekelman Part-Time</strong>
                             </button>
                         </h2>
                         {/* accordian body, what will actually be shown when clicked. need to figure out how to put vids in here sometime */}
@@ -203,11 +209,11 @@ function Home() {
                                 </ul>
                                 <p>Built in collaboration with</p>
                                 <ul>
-                                    <li><a className="text-light" href='https://github.com/ryanmurphy01' target='_blank'>Ryan Murphy</a></li>
-                                    <li><a className="text-light" href='https://github.com/PhilipRosen01' target='_blank'>Philip Rosen</a></li>
+                                    <li><a className="text-light" href='https://github.com/ryanmurphy01' target='_blank' rel='noreferrer'>Ryan Murphy</a></li>
+                                    <li><a className="text-light" href='https://github.com/PhilipRosen01' target='_blank' rel='noreferrer'>Philip Rosen</a></li>
                                 </ul>
                                 <p>Project GitHub link <a className="text-light" 
-                                href='https://github.com/ryanmurphy01/Capstone-Project' target='_blank'>Here</a></p>
+                                href='https://github.com/ryanmurphy01/Capstone-Project' target='_blank' rel='noreferrer'>Here</a></p>
                                 {/* TODO, these should probably be seperate components, the page is huge now */}
                                 <p>See the demo video below:</p>
                                 <video width={320} height={240} controls>
@@ -219,19 +225,93 @@ function Home() {
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingTwo">
                             <button className="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Glass.io
+                                <strong className='secondaryText'>Glass.io</strong>
                             </button>
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <p>A Mobile app built to simulate the storefront of a glasses vendor.</p>
+                                <p>It works by pulling items (glasses in this case) and cycling them to simulate fluctuating sales 
+                                    and views throughout the day</p>
+                                <p>Other features include a wishlist, best selling page and a colourblind test</p>
+                                <p>Primary Technologies used:</p>
+                                <ul>
+                                    <li>Android Studio (Java)</li>
+                                    <li>Android VM</li>
+                                </ul>
+                                <p>Built in collaboration with</p>
+                                <ul>
+                                    <li><a className="text-light" href='https://github.com/YonisA' target='_blank' rel='noreferrer'>Yonis Sheekh</a></li>
+                                </ul>
+                                <p>Project GitHub link <a className="text-light" 
+                                href='https://github.com/SaadMAmjad/Android-Project' target='_blank' rel='noreferrer'>Here</a></p>
+                                <p>See pictures below for more info (click to view closer):</p>
+                                {/* image carasel */}
+                                {/* <div id="carouselExampleControls" className="carousel slide w-50 h-50 mx-auto" data-bs-ride="carousel">
+                                    <div className="carousel-inner">
+                                        <div className="carousel-item active">
+                                            <img src={glass1} className="d-block mx-auto" alt="home page" style={{height:'30rem'}}/>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <img src={glass2} className="d-block mx-auto" alt="home page" style={{height:'30rem'}}/>
+                                        </div>
+                                        <div className="carousel-item">
+                                            <img src={glass3} className="d-block mx-auto" alt="home page" style={{height:'30rem'}}/>
+                                        </div>
+                                    </div>
+                                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Previous</span>
+                                    </button>
+                                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span className="visually-hidden">Next</span>
+                                    </button>
+                                </div> */}
+                                <div className='container'>
+                                    <div className='row'>
+                                        {/* research how to change the content of a single modal, look at the capstone project */}
+                                        <div className='col-4'>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className='img-fluid' src={glass1} alt='Home page'/>
+                                            </button>
+                                        </div>
+                                        <div className='col-4'>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className='img-fluid' src={glass2} alt='Home page'/>
+                                            </button>
+                                        </div>
+                                        <div className='col-4'>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className='img-fluid' src={glass3} alt='Home page'/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div className='row'>
+                                        <div className='col-4'>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className='img-fluid' src={glass4} alt='Home page'/>
+                                            </button>
+                                        </div>
+                                        <div className='col-4'>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className='img-fluid' src={glass5} alt='Home page'/>
+                                            </button>
+                                        </div>
+                                        <div className='col-4'>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                <img className='img-fluid' src={glass6} alt='Home page'/>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                TV Tracker
+                                <strong className='secondaryText'>TV Tracker</strong>
                                 {/* might replace with the iOS app I did */}
                             </button>
                         </h2>
@@ -255,6 +335,25 @@ function Home() {
                     </div>
                 </div>
             </div> */}
+
+            {/* Modal */}
+            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                    <div className="modal-header">
+                        <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div className="modal-body">
+                        ...
+                    </div>
+                    <div className="modal-footer">
+                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" className="btn btn-primary">Save changes</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

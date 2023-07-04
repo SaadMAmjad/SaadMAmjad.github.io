@@ -17,13 +17,13 @@ function Footer() {
                             <ul className="list-unstyled mb-0">
                                 <li>
                                     {/* margin left and right are now start and end, so s or e */}
-                                    <a href="https://www.linkedin.com/in/m-saad-amjad-594749221/" className="text-light" target='_blank'>
+                                    <a href="https://www.linkedin.com/in/m-saad-amjad-594749221/" className="text-light" target='_blank' rel='noreferrer'>
                                         <img className='me-2' style={{maxWidth: '1.4rem'}} src={linkedin} alt="linkedin logo"></img>
                                         Linkedin
                                     </a>
                                 </li>
                                 <li>
-                                <a href="https://github.com/SaadMAmjad" className="text-light" target='_blank'>
+                                <a href="https://github.com/SaadMAmjad" className="text-light" target='_blank' rel='noreferrer'>
                                         <img className='me-2' style={{maxWidth: '1.4rem'}} src={GitHub} alt="GitHub logo"></img>
                                         GitHub
                                     </a>
