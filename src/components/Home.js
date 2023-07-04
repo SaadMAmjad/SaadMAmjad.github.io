@@ -245,7 +245,7 @@ function Home() {
                                 </ul>
                                 <p>Project GitHub link <a className="text-light" 
                                 href='https://github.com/SaadMAmjad/Android-Project' target='_blank' rel='noreferrer'>Here</a></p>
-                                <p>See pictures below for more info (click to view closer):</p>
+                                <p>See pictures below for more info (click to zoom):</p>
                                 {/* image carasel */}
                                 {/* <div id="carouselExampleControls" className="carousel slide w-50 h-50 mx-auto" data-bs-ride="carousel">
                                     <div className="carousel-inner">
@@ -270,37 +270,36 @@ function Home() {
                                 </div> */}
                                 <div className='container'>
                                     <div className='row'>
-                                        {/* research how to change the content of a single modal, look at the capstone project */}
                                         <div className='col-4'>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal1">
                                                 <img className='img-fluid' src={glass1} alt='Home page'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                <img className='img-fluid' src={glass2} alt='Home page'/>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal2">
+                                                <img className='img-fluid' src={glass2} alt='Side bar'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                <img className='img-fluid' src={glass3} alt='Home page'/>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal3">
+                                                <img className='img-fluid' src={glass3} alt='Filter page'/>
                                             </button>
                                         </div>
                                     </div>
                                     <div className='row'>
                                         <div className='col-4'>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                <img className='img-fluid' src={glass4} alt='Home page'/>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal4">
+                                                <img className='img-fluid' src={glass4} alt='Colourblind test'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                <img className='img-fluid' src={glass5} alt='Home page'/>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal5">
+                                                <img className='img-fluid' src={glass5} alt='Wishlist delete'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
-                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                                <img className='img-fluid' src={glass6} alt='Home page'/>
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#modal6">
+                                                <img className='img-fluid' src={glass6} alt='Contact us page'/>
                                             </button>
                                         </div>
                                     </div>
@@ -336,21 +335,52 @@ function Home() {
                 </div>
             </div> */}
 
-            {/* Modal */}
-            <div className="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            {/* There may be a better way to do this, but that can come later */}
+            {/* Modal for first image */}
+            <div className="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                    <div className="modal-header">
-                        <h1 className="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <img className='img-fluid' src={glass1} alt='Home page'/>
                     </div>
-                    <div className="modal-body">
-                        ...
+                </div>
+            </div>
+            {/* Modal for second image */}
+            <div className="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <img className='img-fluid' src={glass2} alt='Side bar'/>
                     </div>
-                    <div className="modal-footer">
-                        <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" className="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            {/* Modal for third image */}
+            <div className="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <img className='img-fluid' src={glass3} alt='Filter page'/>
                     </div>
+                </div>
+            </div>
+            {/* Modal for forth image */}
+            <div className="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <img className='img-fluid' src={glass4} alt='Colourblind test'/>
+                    </div>
+                </div>
+            </div>
+            {/* Modal for fifth image */}
+            <div className="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <img className='img-fluid' src={glass5} alt='Wishlist delete'/>
+                    </div>
+                </div>
+            </div>
+            {/* Modal for sixth image */}
+            <div className="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <img className='img-fluid' src={glass6} alt='Contact us page'/>
                     </div>
                 </div>
             </div>
