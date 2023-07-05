@@ -1,5 +1,6 @@
 import selfie from '../images/selfie.jpg'
 import demo from '../images/Zekelman Part Time Demo Video.mp4'
+import iOSdemo from '../images/iOS Project Demo (Game Tracker).mp4'
 import glass1 from '../images/Glassio demo img 1.png'
 import glass2 from '../images/Glassio demo img 2.png'
 import glass3 from '../images/Glassio demo img 3.png'
@@ -172,7 +173,7 @@ function Home() {
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 {/* TODO style this maybe */}
-                                <p>A website built for St Clair College to help manage part time instructors and their timetables.</p>
+                                <strong>A website built for St Clair College to help manage part time instructors and their timetables.</strong>
                                 <p>It features a user side and an admin side.</p>
                                 <p>The user side is for instructors to use and includes sections for each day to enter your 
                                     available hours. It also includes a section to select courses you can teach. All this data will be
@@ -200,14 +201,14 @@ function Home() {
                                     <li>And finally a page where instructor requests to teach courses are displayed. They are 
                                         granted or denied here by the admin(s)</li>
                                 </ul>
-                                <p>Primary Technologies used:</p>
+                                <strong>Primary Technologies used:</strong>
                                 <ul>
                                     <li>Laravel with PHP</li>
                                     <li>MySQL</li>
                                     <li>Bootstrap</li>
                                     <li>And a library used to export to excel format</li>
                                 </ul>
-                                <p>Built in collaboration with</p>
+                                <strong>Built in collaboration with</strong>
                                 <ul>
                                     <li><a className="text-light" href='https://github.com/ryanmurphy01' target='_blank' rel='noreferrer'>Ryan Murphy</a></li>
                                     <li><a className="text-light" href='https://github.com/PhilipRosen01' target='_blank' rel='noreferrer'>Philip Rosen</a></li>
@@ -230,16 +231,16 @@ function Home() {
                         </h2>
                         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <p>A Mobile app built to simulate the storefront of a glasses vendor.</p>
+                                <strong>A Mobile app built to simulate the storefront of a glasses vendor.</strong>
                                 <p>It works by pulling items (glasses in this case) and cycling them to simulate fluctuating sales 
                                     and views throughout the day</p>
                                 <p>Other features include a wishlist, best selling page and a colourblind test</p>
-                                <p>Primary Technologies used:</p>
+                                <strong>Primary Technologies used:</strong>
                                 <ul>
                                     <li>Android Studio (Java)</li>
                                     <li>Android VM</li>
                                 </ul>
-                                <p>Built in collaboration with</p>
+                                <strong>Built in collaboration with</strong>
                                 <ul>
                                     <li><a className="text-light" href='https://github.com/YonisA' target='_blank' rel='noreferrer'>Yonis Sheekh</a></li>
                                 </ul>
@@ -270,6 +271,7 @@ function Home() {
                                 </div> */}
                                 <div className='container'>
                                     <div className='row'>
+                                        {/* TODO, compress the images more maybe */}
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal1">
                                                 <img className='img-fluid' src={glass1} alt='Home page'/>
@@ -310,13 +312,30 @@ function Home() {
                     <div className="accordion-item bg-dark text-white">
                         <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <strong className='secondaryText'>TV Tracker</strong>
-                                {/* might replace with the iOS app I did */}
+                                <strong className='secondaryText'>Game Tracker</strong>
                             </button>
                         </h2>
                         <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                <strong>A mobile iOS app built to help track games you are playing.</strong>
+                                <p>The app home page features a collection view listing games pulled from an API (RAWG API). It can be searched 
+                                    and will return any games matching the provided input.</p>
+                                <p>You may click on any of the games to list details including rating, release date, etc.</p>
+                                <p>From there you can add to your playlist which will track the start date.</p>
+                                <p>The playlist screen will show all the games you are currently playing with their start dates.</p>
+                                <p>Once a game is complete you can send it to your completed list, or simply remove it if you stopped playing.</p>
+                                <p>Completed list will show all games you finished, their start dates and end dates. You may also remove them, 
+                                    if added by mistake, for example.</p>
+                                <strong>Primary Technologies used:</strong>
+                                <ul>
+                                    <li>XCode</li>
+                                    <li>iPhone VM</li>
+                                    <li>RAWG API</li>
+                                </ul>
+                                <p>See demo video below:</p>
+                                <video width={320} height={240} controls>
+                                    <source src={iOSdemo} type='video/mp4'></source>
+                                </video>
                             </div>
                         </div>
                     </div>
