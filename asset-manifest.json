@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.0b9e5b96.css",
-    "main.js": "/static/js/main.f05e7617.js",
+    "main.js": "/static/js/main.241c7d3a.js",
     "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
     "static/media/Zekelman Part Time Demo Video.mp4": "/static/media/Zekelman Part Time Demo Video.c8ad5b0b81b1b0d8d2a8.mp4",
+    "static/media/iOS Project Demo (Game Tracker).mp4": "/static/media/iOS Project Demo (Game Tracker).cea2199ae20facbeb685.mp4",
     "static/media/selfie.jpg": "/static/media/selfie.5840d01876ba35a731ba.jpg",
     "static/media/First last moments of Itomori (Night sky only).png": "/static/media/First last moments of Itomori (Night sky only).b68ef61f25ec70a694b0.png",
     "static/media/Glassio demo img 4.png": "/static/media/Glassio demo img 4.19d96d942458a36ba529.png",
@@ -16,11 +17,11 @@
     "static/media/Git logo.png": "/static/media/Git logo.987334e9f782cc505f25.png",
     "index.html": "/index.html",
     "main.0b9e5b96.css.map": "/static/css/main.0b9e5b96.css.map",
-    "main.f05e7617.js.map": "/static/js/main.f05e7617.js.map",
+    "main.241c7d3a.js.map": "/static/js/main.241c7d3a.js.map",
     "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0b9e5b96.css",
-    "static/js/main.f05e7617.js"
+    "static/js/main.241c7d3a.js"
   ]
 }
