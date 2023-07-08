@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.0b9e5b96.css",
-    "main.js": "/static/js/main.241c7d3a.js",
+    "main.css": "/static/css/main.77af4dc6.css",
+    "main.js": "/static/js/main.5e2a26d1.js",
     "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
     "static/media/Zekelman Part Time Demo Video.mp4": "/static/media/Zekelman Part Time Demo Video.c8ad5b0b81b1b0d8d2a8.mp4",
     "static/media/iOS Project Demo (Game Tracker).mp4": "/static/media/iOS Project Demo (Game Tracker).cea2199ae20facbeb685.mp4",
     "static/media/selfie.jpg": "/static/media/selfie.5840d01876ba35a731ba.jpg",
-    "static/media/First last moments of Itomori (Night sky only).png": "/static/media/First last moments of Itomori (Night sky only).b68ef61f25ec70a694b0.png",
+    "static/media/Comet.png": "/static/media/Comet.01795cdf7bb31b1bc146.png",
+    "static/media/First last moments of Itomori (Night sky only).png": "/static/media/First last moments of Itomori (Night sky only).ac6c1896d9d8cb0f72df.png",
     "static/media/Glassio demo img 4.png": "/static/media/Glassio demo img 4.19d96d942458a36ba529.png",
     "static/media/Glassio demo img 3.png": "/static/media/Glassio demo img 3.ac5dac77802959fe6cfb.png",
     "static/media/Glassio demo img 5.png": "/static/media/Glassio demo img 5.d6aecef7ce31f4d1c865.png",
@@ -16,12 +17,12 @@
     "static/media/Glassio demo img 6.png": "/static/media/Glassio demo img 6.9ed08c75a6796f1cd017.png",
     "static/media/Git logo.png": "/static/media/Git logo.987334e9f782cc505f25.png",
     "index.html": "/index.html",
-    "main.0b9e5b96.css.map": "/static/css/main.0b9e5b96.css.map",
-    "main.241c7d3a.js.map": "/static/js/main.241c7d3a.js.map",
+    "main.77af4dc6.css.map": "/static/css/main.77af4dc6.css.map",
+    "main.5e2a26d1.js.map": "/static/js/main.5e2a26d1.js.map",
     "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b9e5b96.css",
-    "static/js/main.241c7d3a.js"
+    "static/css/main.77af4dc6.css",
+    "static/js/main.5e2a26d1.js"
   ]
 }
