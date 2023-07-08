@@ -410,9 +410,10 @@ function Home() {
                 <img src={comet} className="d-block w-100" alt="comet in the night sky" loading='lazy'/>
                 <h4 className='ps-2 pt-2' style={{color:'gray'}}>"First Last Moments of Itomori"</h4>
                 <p className='ps-2 text-secondary'>Inspired by a scene from the famous movie "Your Name"
-                    - Visit my <a href="https://www.pixiv.net/en/users/76516118" className="text-white-50" target='_blank' 
-                    rel='noreferrer'>Pixiv</a> for more
+                    - View on <a href="https://www.pixiv.net/en/artworks/100750989" className="text-white-50" target='_blank' 
+                    rel='noreferrer'>Pixiv</a> for full resolution
                 </p>
+                {/* put into an accodian maybe? */}
             </div>
 
             {/* There may be a better way to do this, but that can come later */}
