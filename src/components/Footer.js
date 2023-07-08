@@ -23,7 +23,7 @@ function Footer() {
                                     </a>
                                 </li>
                                 <li>
-                                <a href="https://github.com/SaadMAmjad" className="text-light" target='_blank' rel='noreferrer'>
+                                    <a href="https://github.com/SaadMAmjad" className="text-light" target='_blank' rel='noreferrer'>
                                         <img className='me-2' style={{maxWidth: '1.4rem'}} src={GitHub} alt="GitHub logo"></img>
                                         GitHub
                                     </a>

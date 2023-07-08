@@ -7,6 +7,7 @@ import glass3 from '../images/Glassio demo img 3.png'
 import glass4 from '../images/Glassio demo img 4.png'
 import glass5 from '../images/Glassio demo img 5.png'
 import glass6 from '../images/Glassio demo img 6.png'
+import comet from '../images/Comet.png'
 
 function Home() {
     return (
@@ -105,7 +106,7 @@ function Home() {
                         <tr className='align-middle'>
                             <th scope="row">C#</th>
                             <td>Some Experience</td>
-                            <td></td>
+                            <td>Mostly in Unity</td>
                         </tr>
                         <tr className='align-middle'>
                             <th scope="row">Ruby</th>
@@ -148,6 +149,12 @@ function Home() {
                         <tr className='align-middle'>
                             <th scope="row">Ruby on Rails</th>
                             <td>Only Dabbled</td>
+                            <td></td>
+                        </tr>
+                        {/* iowa says to remove the stuff I've only dabbled in, making it less human and more 'corperate' */}
+                        <tr className='align-middle'>
+                            <th scope="row">Unity</th>
+                            <td>Some Experience</td>
                             <td></td>
                         </tr>
                         <tr className='align-middle'>
@@ -274,34 +281,34 @@ function Home() {
                                         {/* TODO, compress the images more maybe */}
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal1">
-                                                <img className='img-fluid' src={glass1} alt='Home page'/>
+                                                <img className='img-fluid' src={glass1} alt='Home page' loading='lazy'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal2">
-                                                <img className='img-fluid' src={glass2} alt='Side bar'/>
+                                                <img className='img-fluid' src={glass2} alt='Side bar' loading='lazy'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal3">
-                                                <img className='img-fluid' src={glass3} alt='Filter page'/>
+                                                <img className='img-fluid' src={glass3} alt='Filter page' loading='lazy'/>
                                             </button>
                                         </div>
                                     </div>
                                     <div className='row'>
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal4">
-                                                <img className='img-fluid' src={glass4} alt='Colourblind test'/>
+                                                <img className='img-fluid' src={glass4} alt='Colourblind test' loading='lazy'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal5">
-                                                <img className='img-fluid' src={glass5} alt='Wishlist delete'/>
+                                                <img className='img-fluid' src={glass5} alt='Wishlist delete' loading='lazy'/>
                                             </button>
                                         </div>
                                         <div className='col-4'>
                                             <button type="button" data-bs-toggle="modal" data-bs-target="#modal6">
-                                                <img className='img-fluid' src={glass6} alt='Contact us page'/>
+                                                <img className='img-fluid' src={glass6} alt='Contact us page' loading='lazy'/>
                                             </button>
                                         </div>
                                     </div>
@@ -354,12 +361,66 @@ function Home() {
                 </div>
             </div> */}
 
+            <div className='container transparentAndColour pb-2 mt-5'>
+                <h1 className='text-light text-center p-3'>Other Skills</h1>
+                <h3 className='p-2 secondaryText'>Non-Programming, Artistic and Other Skills</h3>
+                {/* Programming language table */}
+                <table className="table table-dark table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Skill</th>
+                            <th scope="col">Experience Level</th>
+                            <th scope="col" style={{width: '25%'}}>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr className='align-middle'>
+                            <th scope="row">Urdu (Language)</th>
+                            <td>Intermediate</td>
+                            <td>Spoken only. It's similar to Hindi and Panjabi, so I can also understand them to some degree</td>
+                        </tr>
+                        <tr className='align-middle'>
+                            <th scope="row">Microsoft Office</th>
+                            <td>Skilled</td>
+                            <td>Only not familiar with Access</td>
+                        </tr>
+                        <tr className='align-middle'>
+                            <th scope="row">Creative Writing</th>
+                            <td>Skilled</td>
+                            <td></td>
+                        </tr>
+                        <tr className='align-middle'>
+                            <th scope="row">Digital Art and Image Editing</th>
+                            <td>Skilled</td>
+                            <td>I work rather slowly. Currently using Krita, but also experienced with Photoshop</td>
+                        </tr>
+                        <tr className='align-middle'>
+                            <th scope="row">Teamwork</th>
+                            <td>Skilled</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            {/* not programming projects */}
+            <div className='container transparentAndColour p-3 mt-5'>
+                <h1 className='text-light text-center p-3'>Other Projects</h1>
+                <h3 className='p-2 secondaryText text-center'>Drawings</h3>
+                <img src={comet} className="d-block w-100" alt="comet in the night sky" loading='lazy'/>
+                <h4 className='ps-2 pt-2' style={{color:'gray'}}>"First Last Moments of Itomori"</h4>
+                <p className='ps-2 text-secondary'>Inspired by a scene from the famous movie "Your Name"
+                    - Visit my <a href="https://www.pixiv.net/en/users/76516118" className="text-white-50" target='_blank' 
+                    rel='noreferrer'>Pixiv</a> for more
+                </p>
+            </div>
+
             {/* There may be a better way to do this, but that can come later */}
             {/* Modal for first image */}
             <div className="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <img className='img-fluid' src={glass1} alt='Home page'/>
+                        <img className='img-fluid' src={glass1} alt='Home page' loading='lazy'/>
                     </div>
                 </div>
             </div>
@@ -367,7 +428,7 @@ function Home() {
             <div className="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <img className='img-fluid' src={glass2} alt='Side bar'/>
+                        <img className='img-fluid' src={glass2} alt='Side bar' loading='lazy'/>
                     </div>
                 </div>
             </div>
@@ -375,7 +436,7 @@ function Home() {
             <div className="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <img className='img-fluid' src={glass3} alt='Filter page'/>
+                        <img className='img-fluid' src={glass3} alt='Filter page' loading='lazy'/>
                     </div>
                 </div>
             </div>
@@ -383,7 +444,7 @@ function Home() {
             <div className="modal fade" id="modal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <img className='img-fluid' src={glass4} alt='Colourblind test'/>
+                        <img className='img-fluid' src={glass4} alt='Colourblind test' loading='lazy'/>
                     </div>
                 </div>
             </div>
@@ -391,7 +452,7 @@ function Home() {
             <div className="modal fade" id="modal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <img className='img-fluid' src={glass5} alt='Wishlist delete'/>
+                        <img className='img-fluid' src={glass5} alt='Wishlist delete' loading='lazy'/>
                     </div>
                 </div>
             </div>
@@ -399,7 +460,7 @@ function Home() {
             <div className="modal fade" id="modal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog">
                     <div className="modal-content">
-                        <img className='img-fluid' src={glass6} alt='Contact us page'/>
+                        <img className='img-fluid' src={glass6} alt='Contact us page' loading='lazy'/>
                     </div>
                 </div>
             </div>
