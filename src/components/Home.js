@@ -111,7 +111,7 @@ function Home() {
                         <tr className='align-middle'>
                             <th scope="row">Ruby</th>
                             <td>Only Dabbled</td>
-                            <td>Used it for one className in college</td>
+                            <td>Used it for one class in college</td>
                         </tr>
                     </tbody>
                 </table>
