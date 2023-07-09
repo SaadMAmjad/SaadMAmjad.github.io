@@ -10,15 +10,20 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active px-3">
-                            {/* todo may need to change if the navbar comes with you when you scroll, or this is useless */}
-                            <a className="nav-link" href="#">Back to Top</a>
+                            <a className="nav-link" href="#top">Back to Top</a>
                             {/* <span className="sr-only">(current)</span> */}
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="#">Skills</a>
+                            <a className="nav-link" href="#programmingSkills">Programming Skills</a>
                         </li>
                         <li className="nav-item px-3">
-                            <a className="nav-link" href="#">Projects</a>
+                            <a className="nav-link" href="#programmingProjects">Progamming Projects</a>
+                        </li>
+                        <li className="nav-item px-3">
+                            <a className="nav-link" href="#otherSkills">Other Skills</a>
+                        </li>
+                        <li className="nav-item px-3">
+                            <a className="nav-link" href="#otherProjects">Other Projects</a>
                         </li>
                     </ul>
                 </div>
