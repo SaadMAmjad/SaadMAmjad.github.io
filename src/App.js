@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Navbar from './components/NavBar';
+import Footer from './components/Footer';
+
+// colour pallete
+// 001011 black, primary
+// 093A3E midnight green, sceondary
+// 3AAFB9 verdigris (teal basically), tertiary
+// 64E9EE eletric blue, accent
+// 97C8EB light sky blue, other accent
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar/>
+      <Home/>
+      <Footer/>
     </div>
   );
 }
