@@ -69,14 +69,14 @@ function Home() {
                         <tr>
                             <th scope="col">Technology</th>
                             <th scope="col">Experience Level</th>
-                            <th scope="col" style={{width: '25%'}}>Notes</th>
+                            <th scope="col" style={{width: '33%'}}>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr className='align-middle'>
                             <th scope="row">HTML and CSS</th>
                             <td>Proficient</td>
-                            <td>Experienced with Bootstrap too</td>
+                            <td>Experienced with Bootstrap</td>
                         </tr>
                         <tr className='align-middle'>
                             <th scope="row">PHP</th>
@@ -101,7 +101,7 @@ function Home() {
                         <tr className='align-middle'>
                             <th scope="row">Swift</th>
                             <td>Some Experience</td>
-                            <td>I don't personally have a mac, so a bit rusty</td>
+                            <td>Out of practice since I don't have a Mac</td>
                         </tr>
                         <tr className='align-middle'>
                             <th scope="row">C#</th>
@@ -111,7 +111,7 @@ function Home() {
                         <tr className='align-middle'>
                             <th scope="row">Ruby</th>
                             <td>Only Dabbled</td>
-                            <td>Used it for one class in college</td>
+                            <td>Used it a little in college</td>
                         </tr>
                     </tbody>
                 </table>
@@ -122,7 +122,7 @@ function Home() {
                         <tr>
                             <th scope="col">Technology</th>
                             <th scope="col">Experience Level</th>
-                            <th scope="col" style={{width: '25%'}}>Notes</th>
+                            <th scope="col" style={{width: '33%'}}>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -134,7 +134,7 @@ function Home() {
                         <tr className='align-middle'>
                             <th scope="row">Android (Java)</th>
                             <td>Proficient</td>
-                            <td>A bit rusty</td>
+                            <td>Out of practice since I've been working with web more</td>
                         </tr>
                         <tr className='align-middle'>
                             <th scope="row">iOS and XCode</th>
@@ -370,7 +370,7 @@ function Home() {
                         <tr>
                             <th scope="col">Skill</th>
                             <th scope="col">Experience Level</th>
-                            <th scope="col" style={{width: '25%'}}>Notes</th>
+                            <th scope="col" style={{width: '33%'}}>Notes</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -416,7 +416,10 @@ function Home() {
                         </h2>
                         {/* accordian body, what will actually be shown when clicked. need to figure out how to put vids in here sometime */}
                         <div id="drawingControl" className="accordion-collapse collapse" aria-labelledby="drawing" data-bs-parent="#otherProjectsList">
-                            <img src={comet} className="d-block w-100" alt="comet in the night sky" loading='lazy'/>
+                            {/* modal trigger for drawing zoom */}
+                            <button className='bg-dark' type="button" data-bs-toggle="modal" data-bs-target="#artModal">
+                                <img src={comet} className="d-block w-100" alt="comet in the night sky" loading='lazy'/>
+                            </button>
                             <h4 className='ps-3 pt-3' style={{color:'gray'}}>"First Last Moments of Itomori"</h4>
                             <p className='ps-3 text-secondary'>Inspired by a scene from the famous movie "Your Name"
                                 - View on <a href="https://www.pixiv.net/en/artworks/100750989" className="text-white-50" target='_blank' 
@@ -467,6 +470,15 @@ function Home() {
                             </div>
                         </div>
                     </div> */}
+                </div>
+            </div>
+
+            {/* drawing modal */}
+            <div className="modal fade" id="artModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog modal-xl">
+                    <div className="modal-content">
+                        <img className='img-fluid' src={comet} alt='Side bar' loading='lazy'/>
+                    </div>
                 </div>
             </div>
 
