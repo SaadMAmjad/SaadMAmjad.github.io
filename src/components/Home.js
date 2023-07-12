@@ -59,7 +59,6 @@ function Home() {
                 </div>
             </div>
 
-            {/* padding temporary to make it fill the page */}
             <div className='container transparentAndColour pb-2' style={{marginTop: '15rem'}}>
                 <h1 id='programmingSkills' className='text-light text-center p-3'>Programming Skills</h1>
                 <h3 className='p-2 secondaryText'>Languages and Markup</h3>
@@ -176,7 +175,7 @@ function Home() {
                                 <strong className='secondaryText'>Zekelman Part-Time</strong>
                             </button>
                         </h2>
-                        {/* accordian body, what will actually be shown when clicked. need to figure out how to put vids in here sometime */}
+                        {/* accordian body, what will actually be shown when clicked. */}
                         <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                             <div className="accordion-body">
                                 {/* TODO style this maybe */}
@@ -222,7 +221,6 @@ function Home() {
                                 </ul>
                                 <p>Project GitHub link <a className="text-light" 
                                 href='https://github.com/ryanmurphy01/Capstone-Project' target='_blank' rel='noreferrer'>Here</a></p>
-                                {/* TODO, these should probably be seperate components, the page is huge now */}
                                 <p>See the demo video below:</p>
                                 <video width={320} height={240} controls>
                                     <source src={demo} type='video/mp4'></source>
