@@ -8,6 +8,7 @@ import glass4 from '../images/Glassio demo img 4.png'
 import glass5 from '../images/Glassio demo img 5.png'
 import glass6 from '../images/Glassio demo img 6.png'
 import comet from '../images/Comet.png'
+import ProSkills from './ProSkills'
 
 function Home() {
     return (
@@ -16,40 +17,11 @@ function Home() {
             {/* container for the picture and opening title */}
             <div className='container p-4 transparentAndColour'>
                 <div className='row'>
-                    {/* Container className by default will take only some of the screen on big devices. add -fluid to it for fullscreen
-                    -------------------------------------------------------------------------
-                    bootstrap works on a grid system, there are 12 total, this will take 4 of those
-                    col-sm is for small screen (phones and stuff). col-md is for medium and col-lg for large
-                    smaller ones also work for anything larger. Size is optional, and not putting will apply to all sizes
-                    ---------------------------------------------------------------------------
-                    can change the order with order-md-1. 
-                    md can be small, med or large, and the number is which position it takes (first, second, etc)
-                    -----------------------------------------------------------------------------
-                    Offset can be added to add space before. offset-2 (number of columns to be skipped it seems)
-                    -----------------------------------------------------------------------------
-                    Can add padding with p-3 (3 is in rem, a unit related to font size)
-                    Also works for only one direction, pt-3 for only top, px-3 for sides, etc
-                    -----------------------------------------------------------------------------
-                    Add a background color with bg-light. Other options are secondary, success, danger, warning, light, dark etc 
-                    -----------------------------------------------------------------------------
-                    Add justify-content-center to a row to align stuff to the center horizontally
-                    Other options are around, between and evenly
-                    Around distributes items evenly with equal space around
-                    Between distributes items evenly inline with first item at start and last and end with the space between
-                    Evenly is for being more even? idk
-                    -----------------------------------------------------------------------------
-                    align-items-center for vertical. Other options are start, end, etc. 
-                    start and end will be top and bottom for vertical
-                    Align works on individual elements too with align-self-center
-                    -----------------------------------------------------------------------------
-                    Space between items (justifed only possibly) can be set with gx-3 (where 3 is the size of the gap) 
-                    */}
                     <div className='col-sm-4'>
                         <img src={selfie} alt="A selfie of me" className='img-fluid' />
                     </div>
-                    {/* and this will take the other 8 */}
+
                     <div className='col-sm-8 align-self-center text-center text-white'>
-                        {/* how to import pictures, see the top also */}
                         <h3 className='secondaryText'>Hello! I'm</h3>
                         <h1>Muhammad Saad Amjad</h1>
                         <h3 className='pt-4 secondaryText'>Graduate of Mobile Applications Development</h3>
@@ -59,111 +31,9 @@ function Home() {
                 </div>
             </div>
 
-            <div className='container transparentAndColour pb-2' style={{marginTop: '15rem'}}>
-                <h1 id='programmingSkills' className='text-light text-center p-3'>Programming Skills</h1>
-                <h3 className='p-2 secondaryText'>Languages and Markup</h3>
-                {/* Programming language table */}
-                <table className="table table-dark table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Technology</th>
-                            <th scope="col">Experience Level</th>
-                            <th scope="col" style={{width: '33%'}}>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className='align-middle'>
-                            <th scope="row">HTML and CSS</th>
-                            <td>Proficient</td>
-                            <td>Experienced with Bootstrap</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">PHP</th>
-                            <td>Proficient</td>
-                            <td></td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">SQL</th>
-                            <td>Some Experience</td>
-                            <td>I have used it quite a lot within Laravel's query builder</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Java</th>
-                            <td>Proficient</td>
-                            <td>Only base Java, I have not tried any frameworks so far</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Javascript</th>
-                            <td>Some Experience</td>
-                            <td></td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Swift</th>
-                            <td>Some Experience</td>
-                            <td>Out of practice since I don't have a Mac</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">C#</th>
-                            <td>Some Experience</td>
-                            <td>Mostly in Unity</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Ruby</th>
-                            <td>Only Dabbled</td>
-                            <td>Used it a little in college</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h3 className='p-2 secondaryText'>Frameworks and Platforms</h3>
-                {/* framework table */}
-                <table className="table table-dark table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Technology</th>
-                            <th scope="col">Experience Level</th>
-                            <th scope="col" style={{width: '33%'}}>Notes</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr className='align-middle'>
-                            <th scope="row">React.js</th>
-                            <td>Some Experience</td>
-                            <td>Used to build this site</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Android (Java)</th>
-                            <td>Proficient</td>
-                            <td>Out of practice since I've been working with web more</td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">iOS and XCode</th>
-                            <td>Some Experience</td>
-                            <td></td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Laravel (PHP)</th>
-                            <td>Proficient</td>
-                            <td></td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Ruby on Rails</th>
-                            <td>Only Dabbled</td>
-                            <td></td>
-                        </tr>
-                        {/* iowa says to remove the stuff I've only dabbled in, making it less human and more 'corperate' */}
-                        <tr className='align-middle'>
-                            <th scope="row">Unity</th>
-                            <td>Some Experience</td>
-                            <td></td>
-                        </tr>
-                        <tr className='align-middle'>
-                            <th scope="row">Git and GitHub</th>
-                            <td>Proficient</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            {/* contains the programming skills and frameworks table */}
+            <ProSkills/>
+
             {/* programming projects section */}
             <div className='container transparentAndColour pb-2 mt-5'>
                 <h1 id='programmingProjects' className='text-light text-center p-3'>Programming Projects</h1>
