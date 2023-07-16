@@ -1,6 +1,5 @@
 import linkedin from '../images/Linkedin logo.png'
 import GitHub from '../images/Git logo.png'
-// import Email from '../images/Email.png'
 
 function Footer() {
     return (
@@ -28,13 +27,6 @@ function Footer() {
                                         GitHub
                                     </a>
                                 </li>
-                                {/* putting an email publically could be trouble */}
-                                {/* <li>
-                                <a href="#!" className="text-light">
-                                        <img className='me-2' style={{maxWidth: '1.4rem'}} src={Email} alt="Mail Icon"></img>
-                                        Email
-                                    </a>
-                                </li> */}
                             </ul>
                         </div>
 
