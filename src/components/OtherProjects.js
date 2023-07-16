@@ -53,7 +53,6 @@ function OtherProjects() {
                                     a slice-of-life and romance book 
                                     - Read latest version on <a href="https://docs.google.com/document/d/19je2Ab7l-zVoMn139jdAVFeQnQXtZl4X2cOLJUall8M" className="text-white-50" target='_blank' 
                                     rel='noreferrer'>Google Docs</a>
-                                    {/* TODO seperate these sections into their own components */}
                                 </p>
                             </div>
                         </div>
