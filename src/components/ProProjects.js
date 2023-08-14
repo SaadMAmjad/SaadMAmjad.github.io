@@ -6,6 +6,8 @@ import glass3 from '../images/Glassio demo img 3.png'
 import glass4 from '../images/Glassio demo img 4.png'
 import glass5 from '../images/Glassio demo img 5.png'
 import glass6 from '../images/Glassio demo img 6.png'
+import preview from '../images/preview.png'
+
 
 function ProProjects() {
     return ( //component for programming projects accordian and needed modals
@@ -164,6 +166,35 @@ function ProProjects() {
                                 <video width={320} height={240} controls>
                                     <source src={iOSdemo} type='video/mp4'></source>
                                 </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="accordion-item bg-dark text-white">
+                        <h2 className="accordion-header" id="headingFour">
+                            <button className="accordion-button collapsed bg-dark text-white" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <strong className='secondaryText'>GUI Webscrapper (New)</strong>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" className="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                            <div className="accordion-body">
+                                <strong>An app built in Python using Beautiful Soup, Tkinter, and PyInstaller</strong>
+                                <p>Pulls data from a safe to scrape website: <a className='text-light' href='http://books.toscrape.com/' 
+                                target='_blank' rel='noreferrer'>http://books.toscrape.com/</a></p>
+                                <p>Enter the book you wish to search for, or leave blank to see all books on the site</p>
+                                <p>Matching results are returned with information on title, price, rating, stock status and links</p>
+                                <p>Use the clear button to reset the table</p>
+
+                                <strong>Primary Technologies used:</strong>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>Beautiful Soup</li>
+                                    <li>Tkinter and Custom Tkinter</li>
+                                    <li>PyInstaller</li>
+                                </ul>
+                                <p>Project GitHub link <a className="text-light"
+                                href='https://github.com/SaadMAmjad/Webscrapper' target='_blank' rel='noreferrer'>Here</a></p>
+                                <p>See preview image:</p>
+                                <img className='img-fluid' src={preview} alt='GUI Webscrapper layout preview' loading='lazy'/>
                             </div>
                         </div>
                     </div>
