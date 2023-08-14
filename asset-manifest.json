@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.77af4dc6.css",
-    "main.js": "/static/js/main.dbd1afc6.js",
+    "main.js": "/static/js/main.84b789e1.js",
     "static/js/787.1297335f.chunk.js": "/static/js/787.1297335f.chunk.js",
     "static/media/Zekelman Part Time Demo Video.mp4": "/static/media/Zekelman Part Time Demo Video.c8ad5b0b81b1b0d8d2a8.mp4",
     "static/media/iOS Project Demo (Game Tracker).mp4": "/static/media/iOS Project Demo (Game Tracker).cea2199ae20facbeb685.mp4",
@@ -13,16 +13,17 @@
     "static/media/Glassio demo img 5.png": "/static/media/Glassio demo img 5.d6aecef7ce31f4d1c865.png",
     "static/media/Glassio demo img 1.png": "/static/media/Glassio demo img 1.b22773f34bcff9b7f248.png",
     "static/media/Glassio demo img 2.png": "/static/media/Glassio demo img 2.7ff1666571cd3b3d973d.png",
+    "static/media/preview.png": "/static/media/preview.1be99bdcfc37b30cd4b8.png",
     "static/media/Linkedin logo.png": "/static/media/Linkedin logo.38dec86db3dd63436a06.png",
     "static/media/Glassio demo img 6.png": "/static/media/Glassio demo img 6.9ed08c75a6796f1cd017.png",
     "static/media/Git logo.png": "/static/media/Git logo.987334e9f782cc505f25.png",
     "index.html": "/index.html",
     "main.77af4dc6.css.map": "/static/css/main.77af4dc6.css.map",
-    "main.dbd1afc6.js.map": "/static/js/main.dbd1afc6.js.map",
+    "main.84b789e1.js.map": "/static/js/main.84b789e1.js.map",
     "787.1297335f.chunk.js.map": "/static/js/787.1297335f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77af4dc6.css",
-    "static/js/main.dbd1afc6.js"
+    "static/js/main.84b789e1.js"
   ]
 }
