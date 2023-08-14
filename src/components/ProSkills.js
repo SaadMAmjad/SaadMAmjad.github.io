@@ -54,6 +54,11 @@ function ProSkills() {
                             <td>Only Dabbled</td>
                             <td>Used it a little in college</td>
                         </tr>
+                        <tr className='align-middle'>
+                            <th scope="row">Python</th>
+                            <td>Learning</td>
+                            <td>No frameworks yet, but a few libraries</td>
+                        </tr>
                     </tbody>
                 </table>
                 <h3 className='p-2 secondaryText'>Frameworks and Platforms</h3>
